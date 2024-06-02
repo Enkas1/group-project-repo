@@ -5,7 +5,7 @@
 # kubectl apply -f deployment.yaml
 # kubectl get pods
 # kubectl get deployments
-# minikube service 
+# minikube service frontend / todo / user / mongodb (dock kommer endast frontend ge något vettigt)
 
 # Deployment och Service för frontend
 apiVersion: apps/v1
@@ -38,6 +38,7 @@ spec:
     targetPort: 80
   selector:
     app: frontend
+---
 
 # Deployment och Service för user
 apiVersion: apps/v1
@@ -70,6 +71,7 @@ spec:
     targetPort: 4001
   selector:
     app: user
+---
 
 # Deployment och Service för todo
 apiVersion: apps/v1
@@ -102,6 +104,7 @@ spec:
     targetPort: 4000
   selector:
     app: todo
+---
 
 # Deployment och Service för MongoDB
 apiVersion: apps/v1
