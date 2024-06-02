@@ -2,10 +2,10 @@
 # Denna fil innehåller både deployment- och service.yaml, går att separera med --- sträck
 # Kör dessa kommando i ordning:
 # minikube start
-# kubectl apply -f deployment.yaml
+# kubectl apply -f deploymentall.yaml
 # kubectl get pods -l app=frontend
 # kubectl get deployments
-# minikube service deploy
+# minikube service 
 
 # Deployment och Service för frontend
 apiVersion: apps/v1
