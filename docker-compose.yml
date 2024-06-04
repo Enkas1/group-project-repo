@@ -1,6 +1,5 @@
 # Skriv detta i terminalen:
 # docker-compose up -d 
-version: '3.8'
 
 services:
   mongodb:
