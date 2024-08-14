@@ -3,7 +3,7 @@
 
 services:
   mongodb:
-    image: mongo
+    image: mongo # Hämtar image från dockerhub
     container_name: mongodb
     environment:  
       - MONGO_INITDB_ROOT_USERNAME=admin
@@ -15,7 +15,7 @@ services:
 
   todoservice:
     build:
-      context: ./DevOps1BE-todo
+      context: ./DevOps1BE-todo # Hämtar från specifika mappen
       dockerfile: Dockerfile
     container_name: container_todo
     ports:
@@ -25,7 +25,7 @@ services:
 
   userservice:
     build:
-      context: ./DevOps1BE-user
+      context: ./DevOps1BE-user # Hämtar från specifika mappen
       dockerfile: Dockerfile
     container_name: container_user
     ports:
@@ -35,7 +35,7 @@ services:
   
   frontend:
     build:
-      context: ./DevOps1FE
+      context: ./DevOps1FE # Hämtar från specifika mappen
       dockerfile: Dockerfile
     container_name: container_frontend
     ports:

@@ -1,4 +1,3 @@
-# OBS! Glöm inte köra filen: kubectl apply -f deployment.yaml
 # Denna fil innehåller både deployment- och service.yaml, går att separera med --- sträck
 # Kör dessa kommando i ordning:
 # minikube start
