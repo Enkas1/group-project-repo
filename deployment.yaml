@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: vedmastaren/frontend:latest 
+        image: vedmastaren/frontend:v3.0.0 
         ports:
         - containerPort: 80
 ---
@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: vedmastaren/user:latest
+        image: vedmastaren/user:v4.0.0
         ports:
         - containerPort: 4001
 ---
@@ -89,7 +89,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: vedmastaren/todo:latest 
+        image: vedmastaren/todo:v3.0.0 
         ports:
         - containerPort: 4000
 ---
